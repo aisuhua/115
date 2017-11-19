@@ -65,7 +65,7 @@
 | id | int |  主键|  |  |  |  |
 | parent_id | int | 父Id |  |  |  |  |
 | sorting | double | 排序 |  |  |  |  |
-| link | varchar | 软链接 |  |  |  |  |
+| link | id | 软链接 |  |  |  |  |
 | user_id | int | 用户id |  |  |  |  |
 | title | varchar |  文件夹名|  |  |  |  |
 | intro | varchar |  文件夹详情|  |  |  |  |
