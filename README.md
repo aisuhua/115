@@ -19,18 +19,19 @@
 
 **文件夹表**
 
-|字段 | 类型 | 索引 |  |  |  |  |
+|字段 | 类型 | 描述 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| id | int |  |  |  |  |  |
-| parent_id | int |  |  |  |  |  |
-| sorting | double |  |  |  |  |  |
-| user_id | int |  |  |  |  |  |
-| title | varchar |  |  |  |  |  |
-| intro | varchar |  |  |  |  |  |
-| files_num | int |  |  |  |  |  |
-| files_size | int |  |  |  |  |  |
-| created_time | int |  |  |  |  |  |
-| updated_time | int |  |  |  |  |  |
+| id | int |  主键|  |  |  |  |
+| parent_id | int | 父Id |  |  |  |  |
+| sorting | double | 排序 |  |  |  |  |
+| user_id | int | 用户id |  |  |  |  |
+| title | varchar |  文件夹名|  |  |  |  |
+| intro | varchar |  文件夹详情|  |  |  |  |
+| files_num | int | 文件夹下文件总数 |  |  |  |  |
+| files_size | int |  文件夹下文件总大小|  |  |  |  |
+| status | int | 创建时间 |  |  |  |  |
+| created_time | int | 创建时间 |  |  |  |  |
+| updated_time | int |  修改时间|  |  |  |  |
 
 
 
