@@ -27,7 +27,8 @@
 | user\_id | int |  |  |  |  |  |
 | title | varchar |  |  |  |  |  |
 | intro | varchar |  |  |  |  |  |
-| fileNum | int |  |  |  |  |  |
+| file_num | int |  |  |  |  |  |
+| files_size | int |  |  |  |  |  |
 | intro | varchar |  |  |  |  |  |
 | createdtime | int |  |  |  |  |  |
 | updatedtime | int |  |  |  |  |  |
