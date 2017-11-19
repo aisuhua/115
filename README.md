@@ -33,14 +33,13 @@
 |字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键| | | | |
-| parent_id | int | 父Id | | | | |
-| sorting | double | 排序 | | | | |
-| user_id | int | 用户id | | | | |
-| title | varchar | 文件夹名| | | | |
-| intro | varchar | 文件夹详情| | | | |
+| file_name | varchar | 文件名 | | | | |
+| file_MD5 | varchar | 文件MD5| | | | |
+| file_size | varchar | 文件夹详情| | | | |
 | files_num | int | 文件夹下文件总数 | | | | |
 | files_size | int | 文件夹下文件总大小| | | | |
 | status | tinyint | 文件夹状态(0,1) | | | | |
+| created_time | int | 创建时间 | | | | |
 | created_time | int | 创建时间 | | | | |
 | updated_time | int | 修改时间| | | | |
 
