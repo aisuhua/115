@@ -19,7 +19,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键 | | | | |
 | folder\_id | int | 文件夹id | | | | |
-| path | varchar | 所在路径 | | | | |
+| path | varchar | 上级目录 | | | | |
 | file\_name | varchar | 文件名称 | | | | |
 | file\_MD5 | varchar | 文件MD5 | | | | |
 | file\_size | varchar | 文件夹详情 | | | | |
