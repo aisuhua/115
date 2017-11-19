@@ -17,20 +17,7 @@
 
 ### 数据库设计
 
-**文件表**
 
-|字段 | 类型 | 描述 | | | | |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| id | int | 主键| | | | |
-| file_name | varchar | 文件名称| | | | |
-| file_MD5 | varchar | 文件MD5| | | | |
-| file_size | varchar | 文件夹详情| | | | |
-| file_type | varchar | 文件类型 | | | | |
-| files_size | int | 文件大小| | | | |
-| file_addres | varchar | 文件地址 | | | | |
-| status | tinyint | 文件夹状态(0,1) | | | | |
-| created_time | int | 创建时间 | | | | |
-| updated_time | int | 修改时间| | | | |
 **用户表**
 
 |字段 | 类型 | 描述 | | | | |
@@ -41,6 +28,21 @@
 | phone | int | 手机号| | | | |
 | password | varchar | 密码 | | | | |
 | status | tinyint | 用户状态(0,1) | | | | |
+| created_time | int | 创建时间 | | | | |
+| updated_time | int | 修改时间| | | | |
+**文件表**
+
+|字段 | 类型 | 描述 | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | int | 主键| | | | |
+| file_name | varchar | 文件名称| | | | |
+| file_name | varchar | 文件名称| | | | |
+| file_MD5 | varchar | 文件MD5| | | | |
+| file_size | varchar | 文件夹详情| | | | |
+| file_type | varchar | 文件类型 | | | | |
+| files_size | int | 文件大小| | | | |
+| file_addres | varchar | 文件地址 | | | | |
+| status | tinyint | 文件夹状态(0,1) | | | | |
 | created_time | int | 创建时间 | | | | |
 | updated_time | int | 修改时间| | | | |
 
