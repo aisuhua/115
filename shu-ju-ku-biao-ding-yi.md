@@ -50,6 +50,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | data\_id | int | 主键 | | | | |
 | folder\_id | int | 主键 | | | | |
+| search\_key | varchar | (/父id/子id/孙id) | | | | |
 | type | tinyint | \(文件或者文件夹\) | | | | |
 | user\_id | int | 用户id | | | | |
 | status | tinyint | 状态\(0,1\) | | | | |
