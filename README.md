@@ -29,7 +29,6 @@
 | intro | varchar |  |  |  |  |  |
 | files_num | int |  |  |  |  |  |
 | files_size | int |  |  |  |  |  |
-| intro | varchar |  |  |  |  |  |
 | created_time | int |  |  |  |  |  |
 | updated_time | int |  |  |  |  |  |
 
