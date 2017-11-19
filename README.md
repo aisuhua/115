@@ -67,7 +67,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | data_id | int |  主键|  |  |  |  |
 | folder_id | int | 主键 |  |  |  |  |
-| type | int |  主键|  |  |  |  |
+| type | int |  (文件或者文件夹)|  |  |  |  |
 | user_id | int | 用户id |  |  |  |  |
 | status | tinyint | 状态(0,1) |  |  |  |  |
 | created_time | int | 创建时间 |  |  |  |  |
