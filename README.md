@@ -36,7 +36,6 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键| | | | |
 | file_name | varchar | 文件名称| | | | |
-| file_name | varchar | 文件名称| | | | |
 | file_MD5 | varchar | 文件MD5| | | | |
 | file_size | varchar | 文件夹详情| | | | |
 | file_type | varchar | 文件类型 | | | | |
