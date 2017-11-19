@@ -81,9 +81,9 @@
 | data_id | int | 主键| | | | |
 | user_id | int | 用户id (主键)| | | | |
 | type | tinyint | (文件或者文件夹)| | | | |
-| status | tinyint | 状态(0,1) | | | | |
-| created_time | int | 创建时间 | | | | |
-| updated_time | int | 修改时间| | | | |
+| status | tinyint | 是否接收(0,1) | | | | |
+| created_time | int | 发送时间 | | | | |
+| updated_time | int | 接收时间| | | | |
 **文件打包表(临时存储)**
 **文件接收表**
 
