@@ -38,7 +38,7 @@
 | parent\_id | int | 父Id | | | | |
 | sorting | double | 排序 | | | | |
 | user\_id | int | 用户id | | | | |
-| path | varchar | 目录地址 | | | | |
+| path | varchar | 目录地址(/root/www) | | | | |
 | title | varchar | 文件夹名 | | | | |
 | intro | varchar | 文件夹详情 | | | | |
 | files\_num | int | 文件夹下文件总数 | | | | |
