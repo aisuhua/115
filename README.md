@@ -61,10 +61,11 @@
 | created_time | int | 创建时间 |  |  |  |  |
 | updated_time | int |  修改时间|  |  |  |  |
 
-**文件与文件夹对应关系表(t_file_index)**
+**对应关系表(t_index)**
+
 |字段 | 类型 | 描述 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| file_id | int |  主键|  |  |  |  |
+| data_id | int |  主键|  |  |  |  |
 | folder_id | int | 主键 |  |  |  |  |
 | user_id | int | 用户id |  |  |  |  |
 | status | tinyint | 状态(0,1) |  |  |  |  |
