@@ -17,9 +17,22 @@
 
 ### 数据库设计
 **用户表**
+
 |字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | user_id | int | 主键| | | | |
+| user_name |varchar | 用户名称 | | | | |
+| nick_name | varchar | 用户昵称 | | | | |
+| phone | int | 手机号| | | | |
+| password | varchar | 密码 | | | | |
+| status | tinyint | 用户状态(0,1) | | | | |
+| created_time | int | 创建时间 | | | | |
+| updated_time | int | 修改时间| | | | |
+**文件表**
+
+|字段 | 类型 | 描述 | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | int | 主键| | | | |
 | parent_id | int | 父Id | | | | |
 | sorting | double | 排序 | | | | |
 | user_id | int | 用户id | | | | |
@@ -30,8 +43,6 @@
 | status | tinyint | 文件夹状态(0,1) | | | | |
 | created_time | int | 创建时间 | | | | |
 | updated_time | int | 修改时间| | | | |
-**文件表**
-
 
 **文件夹表**
 
