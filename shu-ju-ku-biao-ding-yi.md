@@ -38,7 +38,7 @@
 | parent\_id | int | 父Id | | | | |
 | sorting | double | 排序 | | | | |
 | user\_id | int | 用户id | | | | |
-| path | varchar | (/父id/子id/孙id..记录到parent_id的父id为止) | | | | |
+| path | varchar | 目录地址 | | | | |
 | title | varchar | 文件夹名 | | | | |
 | intro | varchar | 文件夹详情 | | | | |
 | files\_num | int | 文件夹下文件总数 | | | | |
