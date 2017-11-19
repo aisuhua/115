@@ -17,7 +17,19 @@
 
 ### 数据库设计
 **用户表**
-
+|字段 | 类型 | 描述 | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | int | 主键| | | | |
+| parent_id | int | 父Id | | | | |
+| sorting | double | 排序 | | | | |
+| user_id | int | 用户id | | | | |
+| title | varchar | 文件夹名| | | | |
+| intro | varchar | 文件夹详情| | | | |
+| files_num | int | 文件夹下文件总数 | | | | |
+| files_size | int | 文件夹下文件总大小| | | | |
+| status | tinyint | 文件夹状态(0,1) | | | | |
+| created_time | int | 创建时间 | | | | |
+| updated_time | int | 修改时间| | | | |
 **文件表**
 
 
@@ -38,6 +50,7 @@
 | updated_time | int |  修改时间|  |  |  |  |
 
 **文件与文件夹对应关系表**
+
 **文件发送表**
 **文件打包表(临时存储)**
 **文件接收表**
