@@ -114,12 +114,14 @@
 | updated\_time | int | 接收时间 |  |  |  |  |
 
 **文件操作任务表**
+
 | 字段 | 类型 | 描述 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | task\_id | int | 主键 |  |  |  |  |
+| data\_id | int | \(文件或文件夹Id\) |  |  |  |  |
 | user\_id | int | 用户id  |  |  |  |  |
 | type | tinyint | 操作类型 |  |  |  |  |
-| status | tinyint | 是否接收\(0,1\) |  |  |  |  |
+| error | int | 错误类型 |  |  |  |  |
 | created\_time | int | 发送时间 |  |  |  |  |
 | updated\_time | int | 接收时间 |  |  |  |  |
 
