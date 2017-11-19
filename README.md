@@ -22,16 +22,16 @@
 |字段 | 类型 |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int |  |  |  |  |  |
-| parent\_id | int |  |  |  |  |  |
+| parent_id | int |  |  |  |  |  |
 | sorting | double |  |  |  |  |  |
-| user\_id | int |  |  |  |  |  |
+| user_id | int |  |  |  |  |  |
 | title | varchar |  |  |  |  |  |
 | intro | varchar |  |  |  |  |  |
 | files_num | int |  |  |  |  |  |
 | files_size | int |  |  |  |  |  |
 | intro | varchar |  |  |  |  |  |
-| createdtime | int |  |  |  |  |  |
-| updatedtime | int |  |  |  |  |  |
+| created_time | int |  |  |  |  |  |
+| updated_time | int |  |  |  |  |  |
 
 
 
