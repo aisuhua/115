@@ -65,7 +65,8 @@
 | id | int |  主键|  |  |  |  |
 | parent_id | int | 父Id |  |  |  |  |
 | sorting | double | 排序 |  |  |  |  |
-| link | id | 软链接 |  |  |  |  |
+| folder_type | varchar | 软链接or目录 |  |  |  |  |
+| link_id | id | 软链接 |  |  |  |  |
 | user_id | int | 用户id |  |  |  |  |
 | title | varchar |  文件夹名|  |  |  |  |
 | intro | varchar |  文件夹详情|  |  |  |  |
@@ -75,7 +76,7 @@
 | created_time | int | 创建时间 |  |  |  |  |
 | updated_time | int |  修改时间|  |  |  |  |
 
-**对应关系表(t_index)**
+**目录对应关系表(t_index)**
 
 |字段 | 类型 | 描述 |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
