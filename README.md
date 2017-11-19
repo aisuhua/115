@@ -108,7 +108,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | data\_id | int | 主键\(文件或文件夹\) |  |  |  |  |
 | send_user\_id | int | 发送用户id |  |  |  |  |
-| take_user\_id | int | 发用户id |  |  |  |  |
+| take_user\_id | int | 接收用户id |  |  |  |  |
 | type | tinyint | \(文件或者文件夹\) |  |  |  |  |
 | status | tinyint | 是否接收\(0,1\) |  |  |  |  |
 | created\_time | int | 发送时间 |  |  |  |  |
