@@ -1,3 +1,36 @@
-# My Awesome Book
+# 简易文件系统设计方案
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+### 目标
+
+1.支持多用户  
+2.数据库需要支持存储超过100亿\(?\)  
+3.每次操作文件数量不能超过100万,大小不能超过500G  
+4.文件发送后.对方可以在任意时候接收不受影响
+
+### 问题与思路
+
+#### 数据库存储问题
+
+#### 发送与接收问题
+
+#### 功能冲突问题
+
+### 数据库设计
+
+**文件夹表**
+
+|字段 | 类型 |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| id | int |  |  |  |  |  |
+| parent\_id | int |  |  |  |  |  |
+| sorting | double |  |  |  |  |  |
+| user\_id | int |  |  |  |  |  |
+| title | varchar |  |  |  |  |  |
+| intro | varchar |  |  |  |  |  |
+| fileCount | int |  |  |  |  |  |
+| intro | varchar |  |  |  |  |  |
+| createdtime | int |  |  |  |  |  |
+| updatedtime | int |  |  |  |  |  |
+
+
+
