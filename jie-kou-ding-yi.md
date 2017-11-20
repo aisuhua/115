@@ -21,13 +21,12 @@
 
 
 ### Parameters
-
-| Name    | Type      | Description                          |
-|---------|-----------|--------------------------------------|
-| type			| String			|  <p>素材类型.</p>							|
-| parent_id		| String			|  <p>父文件ID.</p>							|
-| team_id		| String			|  <p>团队ID.</p>							|
-| title			| String			|  <p>文件名.</p>							|
+ ```
+   {
+     pid:xxxx,
+     file:[]
+   }
+ ```
 
 ### Success Response
 
