@@ -33,7 +33,7 @@ HTTP/1.1 200 OK
   "error":''
 }
 ```
-## 删除素材或文件夹
+## 删除文件或文件夹
 
 
 
@@ -42,12 +42,9 @@ HTTP/1.1 200 OK
 
 ### Parameters
 
-| Name    | Type      | Description                          |
-|---------|-----------|--------------------------------------|
-| id			| String			|  <p>素材或文件夹Id.</p>							|
-| type			| String			|  <p>素材类型.</p>							|
-| team_id			| String			|  <p>团队ID.</p>							|
-
+{
+  filelist:[xxxxxx]
+}
 ### Success Response
 
 Success-Response:
@@ -57,7 +54,8 @@ HTTP/1.1 200 OK
 {
   "code": "0",
   "msg": "Success",
-  "result":"true"
+  "error":'',
+  "taskid":''
 }
 ```
 ## 获取素材信息
