@@ -7,7 +7,7 @@
 
 
 
-	POST /Resourcefolder/create
+	POST /fileopera/create
 
 
 ### Parameters
@@ -37,7 +37,7 @@ HTTP/1.1 200 OK
 
 
 
-	POST /resourcefolder/delete
+	POST /fileopera/delete
 
 
 ### Parameters
@@ -62,7 +62,7 @@ HTTP/1.1 200 OK
 
 
 
-	GET /resourcefolder/detail
+	GET /fileopera/detail
 
 
 ### Parameters
