@@ -1,5 +1,7 @@
 ### 数据库表设计
-
+  数据库设计想法
+  1.把
+    
 **用户表\(t\_user\)**
 
 | 字段 | 类型 | 描述 | | | | |
@@ -13,7 +15,7 @@
 | created\_time | int | 创建时间 | | | | |
 | updated\_time | int | 修改时间 | | | | |
 
-**文件表\(t\_file\)**
+**文件地址表\(t\_file_addres\)**
 
 | 字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -27,17 +29,18 @@
 | created\_time | int | 创建时间 | | | | |
 | updated\_time | int | 修改时间 | | | | |
 
-**文件夹表\(t\_folder\)**
+**文件表\(t\_file\)**
 
 | 字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键 | | | | |
 | parent\_id | int | 父Id | | | | |
 | sorting | double | 排序 | | | | |
+| file_link | int | 真实文件ID | | | | |
 | user\_id | int | 用户id | | | | |
 | path | varchar(255)| 目录地址(/root/www) | | | | |
-| title | varchar | 文件夹名 | | | | |
-| intro | varchar | 文件夹详情 | | | | |
+| name | varchar | 文件名 | | | | |
+| id_dir | tinyint | 是否是目录| | | | |
 | files\_num | int | 文件夹下文件总数 | | | | |
 | files\_size | int | 文件夹下文件总大小 | | | | |
 | status | tinyint | 文件夹状态\(0,1\) | | | | |
