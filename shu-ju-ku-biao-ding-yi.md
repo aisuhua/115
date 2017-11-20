@@ -18,9 +18,6 @@
 | 字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键 | | | | |
-| folder\_id | int | 文件夹id | | | | |
-| path | varchar | 上级目录 | | | | |
-| file\_name | varchar | 文件名称 | | | | |
 | file\_MD5 | varchar | 文件MD5 | | | | |
 | file\_size | varchar | 文件夹详情 | | | | |
 | file\_type | varchar | 文件类型 | | | | |
@@ -66,6 +63,8 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | data\_id | int | 主键 | | | | |
 | folder\_id | int | 主键 | | | | |
+| path | varchar | 上级目录 | | | | |
+| file\_name | varchar | 文件名称 | | | | |
 | search\_key | varchar | (/父id/子id/孙id..记录到data_id的父id为止) | | | | |
 | type | tinyint | \(文件或者文件夹\) | | | | |
 | user\_id | int | 用户id | | | | |
