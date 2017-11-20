@@ -113,6 +113,68 @@ HTTP/1.1 200 OK
 
 ```
 
+## 复制文件
+
+
+
+	POST /fileopera/move
+
+
+### Parameters
+
+filelist:[{"id":"xxxx","tofid":"xxxxx","newname":"xxxx"}]
+
+
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+"code": "0",
+"msg": "Success",
+"error":'',
+"taskid":''
+}
+
+```
+
+
+
+
+## 发送文件
+
+
+
+	POST /fileopera/move
+
+
+### Parameters
+
+filelist:[{"id":"xxxx","tofid":"xxxxx","newname":"xxxx"}]
+
+
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+"code": "0",
+"msg": "Success",
+"error":'',
+"taskid":''
+}
+
+```
+
+
+
+
 
 
 
