@@ -173,34 +173,6 @@ HTTP/1.1 200 OK
 ```
 
 
-## 发送文件
-
-
-
-	POST /fileopera/send
-
-
-### Parameters
-
-filelist:[{"id":"1232",toid:'1232'}]
-
-
-
-### Success Response
-
-Success-Response:
-
-```
-HTTP/1.1 200 OK
-{
-"code": "0",
-"msg": "Success",
-"error":'',
-"taskid":''
-}
-
-```
-
 
 
 
@@ -234,6 +206,39 @@ HTTP/1.1 200 OK
 }
 
 ```
+
+
+
+
+
+## 任务查询接口
+
+
+
+	POST /task/query
+
+
+### Parameters
+
+taskid:1111111
+
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+"errno": "0",
+"status": "Success",
+"error":'',
+"task_error":''
+}
+
+```
+
+
 
 
 
