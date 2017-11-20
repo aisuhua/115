@@ -60,6 +60,18 @@
 | created\_time | int | 发送时间 | | | | |
 | updated\_time | int | 接收时间 | | | | |
 
+**目录对应关系表\(t\_index\)**
+
+| 字段 | 类型 | 描述 | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| data\_id | int | 主键 | | | | |
+| folder\_id | int | 主键 | | | | |
+| search\_key | varchar | (/父id/子id/孙id..记录到data_id的父id为止) | | | | |
+| type | tinyint | \(文件或者文件夹\) | | | | |
+| user\_id | int | 用户id | | | | |
+| status | tinyint | 状态\(0,1\) | | | | |
+| created\_time | int | 创建时间 | | | | |
+| updated\_time | int | 修改时间 | | | | |
 **文件操作任务表**
 
 | 字段 | 类型 | 描述 | | | | |
