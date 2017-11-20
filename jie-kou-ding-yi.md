@@ -13,9 +13,9 @@
 ### Parameters
  ```
    {
-     pid:xxxx,
-     path:xxxx
-   }
+     pid:11112323,
+     name:'测试'
+        }
  ```
 
 ### Success Response
@@ -27,9 +27,9 @@ HTTP/1.1 200 OK
 {
   "code": "0",
   "msg": "Success",
-  "path":"xxxx",
-  "name":'xxxxx',
-  "f_id":'xxxxx',
+  "path":"/zhq/测试",
+  "name":'测试',
+  "f_id":'1232321',
   "error":''
 }
 ```
@@ -43,7 +43,7 @@ HTTP/1.1 200 OK
 ### Parameters
 
 {
-  filelist:[xxxxxx]
+  filelist:[id]
 }
 ### Success Response
 
@@ -67,7 +67,7 @@ HTTP/1.1 200 OK
 
 ### Parameters
 
-filelist:[{"id":"xxxxxx","newname":"CrossOver1"}]
+filelist:[{"id":"1232321","newname":"CrossOver1"}]
 
 
 
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 
 ### Parameters
 
-filelist:[{"id":"xxxx","tofid":"xxxxx","newname":"xxxx"}]
+filelist:[{"id":"12313","tofid":"123123","newname":"测试"}]
 
 
 
@@ -148,12 +148,12 @@ HTTP/1.1 200 OK
 
 
 
-	POST /fileopera/move
+	POST /fileopera/send
 
 
 ### Parameters
 
-filelist:[{"id":"xxxx","tofid":"xxxxx","newname":"xxxx"}]
+filelist:[{"id":"1232",toid:'1232'}]
 
 
 
@@ -171,6 +171,74 @@ HTTP/1.1 200 OK
 }
 
 ```
+
+
+## 发送文件
+
+
+
+	POST /fileopera/send
+
+
+### Parameters
+
+filelist:[{"id":"1232",toid:'1232'}]
+
+
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+"code": "0",
+"msg": "Success",
+"error":'',
+"taskid":''
+}
+
+```
+
+
+
+
+
+
+
+## 接收文件
+
+
+
+	POST /fileopera/send
+
+
+### Parameters
+
+filelist:[{"pid":"1232"}]
+
+
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+"code": "0",
+"msg": "Success",
+"error":'',
+"taskid":''
+}
+
+```
+
+
+
+
+
 
 
 
