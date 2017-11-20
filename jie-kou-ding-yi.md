@@ -14,7 +14,7 @@
  ```
    {
      pid:xxxx,
-     file:xxxxx
+     path:xxxx
    }
  ```
 
@@ -27,7 +27,10 @@ HTTP/1.1 200 OK
 {
   "code": "0",
   "msg": "Success",
-  "result":"true"
+  "path":"xxxx",
+  "name":'xxxxx',
+  "f_id":'xxxxx',
+  "error":''
 }
 ```
 ## 删除素材或文件夹
