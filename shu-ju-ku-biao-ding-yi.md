@@ -1,7 +1,9 @@
 ### 数据库表设计
   数据库设计想法
   1.上传后的文件存入文件地址表 同时在文件表中也对应一条记录
-  2.
+  2.文件表记录所有文件以及目录 还有父子关系
+  3.目录文件对应表 记录目录下的文件与子目录
+  4.
     
 **用户表\(t\_user\)**
 
@@ -92,13 +94,19 @@
 | 字段 | 类型 | 描述 | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | task\_id | int | 主键 | | | | |
-| data\_id | int | 主键 | | | | |
-| folder\_id | int | 主键 | | | | |
-| path | varchar | 上级目录 | | | | |
-| file\_name | varchar | 文件名称 | | | | |
-| search\_key | varchar | (/父id/子id/孙id..记录到data_id的父id为止) | | | | |
-| type | tinyint | \(文件或者文件夹\) | | | | |
+| id | int | 主键 | | | | |
+| parent\_id | int | 父Id | | | | |
+| sorting | double | 排序 | | | | |
+| file_link | int | 真实文件ID | | | | |
 | user\_id | int | 用户id | | | | |
-| status | tinyint | 状态\(0,1\) | | | | |
+| path | varchar(255)| 目录地址(/root/www) | | | | |
+| name | varchar | 文件名 | | | | |
+| id_dir | tinyint | 是否是目录| | | | |
+| files\_num | int | 文件夹下文件总数 | | | | |
+| files\_size | int | 文件夹下文件总大小 | | | | |
+| status | tinyint | 文件夹状态\(0,1\) | | | | |
 | created\_time | int | 创建时间 | | | | |
 | updated\_time | int | 修改时间 | | | | |
+
+
+
