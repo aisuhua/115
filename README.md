@@ -62,12 +62,14 @@
 
 
 全文件缓存: 用户目录文件结构放入有序集合中 
-/path
-/path/zhq
-/path/zhq/aaaa
-/path/zhq/bbbb
-/path/pan/aaaa
-/path/pan/bbbb 
+[
+  /path
+  /path/zhq
+  /path/zhq/aaaa
+  /path/zhq/bbbb
+  /path/pan/aaaa
+  /path/pan/bbbb
+  ] 
 复制的时候先找到 当前path的位置 然后向后移动文件数量大小 取出 更新path 然后复制到目录缓存/发送文件缓存中等数据库更新后 更新全文件缓存
 
 发送文件缓存 : 待发送的文件的缓存
