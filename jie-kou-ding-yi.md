@@ -80,8 +80,10 @@ HTTP/1.1 200 OK
 {
   "code": "0",
   "msg": "Success",
-  "result":"true"
+  "error":'',
+  "taskid":''
 }
+
 ```
 ## 文件素材树
 
