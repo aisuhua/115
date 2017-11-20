@@ -1,8 +1,41 @@
 # 接口文档 
 
 
-## 上传文件
+## 文件列表
 
+     POST /fileopera/list
+
+### Parameters
+ ```
+   {
+     pid:11112323,
+   }
+ ```
+
+### Success Response
+
+Success-Response:
+
+```
+HTTP/1.1 200 OK
+{
+  "code": "0",
+  "msg": "Success",
+  "data":[
+ path "/zhq/测试",
+"name":'测试',
+"f_id":'1232321',
+"is_dir":'',
+"totol":'',
+""  
+  ]
+  
+  
+
+}
+```
+
+   
 ## 创建文件
 
 

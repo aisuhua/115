@@ -25,9 +25,8 @@
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | id | int | 主键 | | | | |
 | file\_MD5 | varchar | 文件MD5 | | | | |
-| file\_size | varchar | 文件夹详情 | | | | |
 | file\_type | varchar | 文件类型 | | | | |
-| files\_size | int | 文件大小 | | | | |
+| file\_size | int | 文件大小 | | | | |
 | file\_addres | varchar | 文件地址 | | | | |
 | status | tinyint | 文件夹状态\(0,1\) | | | | |
 | created\_time | int | 创建时间 | | | | |
@@ -46,7 +45,7 @@
 | name | varchar | 文件名 | | | | |
 | id_dir | tinyint | 是否是目录| | | | |
 | files\_num | int | 文件夹下文件总数 | | | | |
-| files\_size | int | 文件夹下文件总大小 | | | | |
+| files\_totol | int | 文件夹下文件总大小 | | | | |
 | status | tinyint | 文件夹状态\(0,1\) | | | | |
 | created\_time | int | 创建时间 | | | | |
 | updated\_time | int | 修改时间 | | | | |
@@ -104,7 +103,7 @@
 | name | varchar | 文件名 | | | | |
 | id_dir | tinyint | 是否是目录| | | | |
 | files\_num | int | 文件夹下文件总数 | | | | |
-| files\_size | int | 文件夹下文件总大小 | | | | |
+| files\_totol | int | 文件夹下文件总大小 | | | | |
 | status | tinyint | 文件夹状态\(0,1\) | | | | |
 | created\_time | int | 创建时间 | | | | |
 | updated\_time | int | 修改时间 | | | | |
