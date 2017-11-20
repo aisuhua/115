@@ -4,7 +4,11 @@
 ## 文件列表
 
      POST /fileopera/list
-
+     
+### 描述
+   
+    根据父节点获取文件与文件夹信息
+   
 ### Parameters
  ```
    {
@@ -22,12 +26,14 @@ HTTP/1.1 200 OK
   "code": "0",
   "msg": "Success",
   "data":[
- path "/zhq/测试",
-"name":'测试',
-"f_id":'1232321',
-"is_dir":'',
-"totol":'',
-""  
+    {
+       path "/zhq/测试",
+       "name":'测试',
+       "f_id":'1232321',
+       "is_dir":'1',
+       "totol":'22222222',
+       "num":2 
+       } 
   ]
   
   
@@ -42,7 +48,8 @@ HTTP/1.1 200 OK
 
 	POST /fileopera/create
 
-
+### 描述
+     创建文件或文件夹同时更新全目录缓存 与 文件大小总数缓存
 ### Parameters
  ```
    {
@@ -72,6 +79,8 @@ HTTP/1.1 200 OK
 
 	POST /fileopera/delete
 
+### 描述
+     删除文件或文件夹同时更新全目录缓存 与 文件大小总数缓存 (支持批量)
 
 ### Parameters
 
@@ -96,7 +105,8 @@ HTTP/1.1 200 OK
 
 
 	POST /fileopera/rename
-
+### 描述
+    根据 id 改名字  (支持批量)
 
 ### Parameters
 
@@ -123,6 +133,10 @@ HTTP/1.1 200 OK
 
 
 	POST /fileopera/move
+
+### 描述
+   移动文件到其他目录  同时更新 用户全目录缓存(支持批量)
+
 
 
 ### Parameters
@@ -151,6 +165,12 @@ HTTP/1.1 200 OK
 
 
 	POST /fileopera/move
+
+### 描述
+   
+复制的时候先找到 当前path的位置 然后向后移动文件数量大小 取出 更新path 然后复制到目录缓存/发送文件缓存中等数据库更新后 更新全文件缓存
+
+
 
 
 ### Parameters
@@ -183,7 +203,8 @@ HTTP/1.1 200 OK
 
 	POST /fileopera/send
 
-
+### 描述
+  发送目录创建待发送文件任务 缓存处理与复制同
 ### Parameters
 
 filelist:[{"id":"1232",toid:'1232'}]
@@ -204,12 +225,6 @@ HTTP/1.1 200 OK
 }
 
 ```
-
-
-
-
-
-
 
 
 ## 接收文件
