@@ -60,7 +60,9 @@
     目录缓存结构 用户id 为 key  /www:{
        empty:'' //是否为空
        is_dir:''//是否是文件夹
-       p_hash:''//
+       p_id:''//
+       id:''
+       children [] //缓存分页的文件目录对象
     }
     
     
